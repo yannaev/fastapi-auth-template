@@ -1,7 +1,4 @@
-import asyncio
-
-async def main():
-    pass
+import uvicorn
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    uvicorn.run("app.main:app", host="0.0.0.0", reload=True)
